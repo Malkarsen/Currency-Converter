@@ -36,11 +36,12 @@ A simple and responsive currency converter web app built with HTML, CSS, and Jav
 
 ## Folder Structure
 
-/
+```
 ├── index.html         # Main HTML file
 ├── styles.css         # Stylesheet
 ├── index.js           # JavaScript logic
 └── assets/            # Images
+```
 
 
 ## Notes
