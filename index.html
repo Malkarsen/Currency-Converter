@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <title>Currency converter</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles.css" type="text/css" />
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="https://cdn0.iconfinder.com/data/icons/business-1797/32/3-512.png"
+    />
+    <script src="./index.js" defer></script>
+  </head>
+  <body>
+    <div id="root">
+      <header>
+        <div class="title">Currency converter</div>
+      </header>
+      <main>
+        <form class="converter_form">
+          <div class="currency_wrapper">
+            <div class="from_wrapper">
+              <label id="from_label" class="form_label" for="from_select"
+                >From</label
+              >
+              <div class="from_select_wrapper">
+                <img
+                  id="from_currency_img"
+                  class="currency_img"
+                  src="./assets/flags/AUD.svg"
+                />
+                <select
+                  id="from_select"
+                  class="form_select"
+                  name="from"
+                ></select>
+              </div>
+              <label id="from_currency_label" class="currency_label"></label>
+            </div>
+            <button class="switch_currency_button" type="button">
+              <img
+                class="switch_currency_img"
+                src="./assets/arrows_left_right_icon.png"
+              />
+            </button>
+            <div class="to_wrapper">
+              <label id="to_label" class="form_label" for="to_select">To</label>
+              <div class="to_select_wrapper">
+                <img
+                  id="to_currency_img"
+                  class="currency_img"
+                  src="./assets/flags/AUD.svg"
+                />
+                <select id="to_select" class="form_select" name="to"></select>
+              </div>
+              <label id="to_currency_label" class="currency_label"></label>
+            </div>
+          </div>
+          <label id="rates_label" class="form_label"></label>
+          <div class="amount_wrapper">
+            <label id="amount_label" class="form_label" for="amount_input"
+              >Amount</label
+            >
+            <input
+              id="amount_input"
+              class="form_input"
+              name="amount"
+              type="number"
+              placeholder="100"
+              step="0.5"
+              autofocus
+            />
+          </div>
+          <button class="convert_button" type="submit">Convert</button>
+          <div class="result_wrapper">
+            <label id="result_label" class="form_label">Result</label>
+            <div class="result">
+              <div id="spinner" class="spinner hidden"></div>
+            </div>
+          </div>
+        </form>
+      </main>
+    </div>
+  </body>
+</html>
