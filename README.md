@@ -29,7 +29,7 @@ A simple and responsive currency converter web app built with HTML, CSS, and Jav
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/currency-converter.git
+   git clone https://github.com/Malkarsen/currency-converter.git
    ```
 
 2. Open `index.html` in your browser.
@@ -42,7 +42,6 @@ A simple and responsive currency converter web app built with HTML, CSS, and Jav
 ├── index.js           # JavaScript logic
 └── assets/            # Images
 ```
-
 
 ## Notes
 
